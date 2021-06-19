@@ -1,0 +1,101 @@
+<main id="main" class="container">
+
+   <head><link rel= "stylesheet" type= "text/css" href= "../static/Form_Style.css"></head> 
+
+   <div class="row">
+
+      <div class="col-xs-12 col-lg-offset-3 col-lg-6">
+
+         <div class="m-b-md text-center">
+
+            <h1 id="title">Mental Health Analyser</h1>
+            <p id="description" class="description" class="text-center">Based on UTC 8 Recommendations</p>
+         </div>
+
+         <form method="POST" action="/templates/result.html" id="survey-form" name="survey-form">
+
+
+            <fieldset>
+               <label for="name" id="name-label">
+               What is your name?
+               <input class="" type="text" id="name" name="name" placeholder="Enter your name (required)" required />
+               </label>
+            </fieldset>
+										
+            <fieldset>
+               <label for="number" id="number-label">
+               How old are you?
+               <input class="" type="number" id="number" name="number" min="8" max="112" placeholder="Enter you age (required)" required />
+               </label>
+            </fieldset>
+										
+            <fieldset>
+               <label for="dropdown">
+                  You are:
+																
+                  <select id="dropdown" name="dropdown" class="m-t-xs">
+
+                     <option value="Male" selected>Male</option>
+                     <option value="Female">Female</option>
+                     <option value="notSaying">Prefer not to say</option>
+                     <option value="other">Other</option>
+                     
+                  </select>
+               </label>
+            </fieldset>
+
+
+            <fieldset>
+               <div class="labels">
+                  Are you on some sort of medication?*
+               </div>
+               <label class="m-b-xs">
+               <input type="radio" name="survey-form-gender" value="yes" checked /> yes
+               </label>
+               <label class="m-b-xs">
+               <input type="radio" name="survey-form-gender" value="No" /> No
+               </label>
+              
+            </fieldset>
+           
+            <fieldset>
+
+               <label for="text1">
+               Question 1: How is your general mood throughout the day? Can you tell the most frequent thoughts you have in a day?
+               <textarea id="text1" name= "text1" type= "text">
+               </textarea>
+               </label>
+
+					<label for="text2">
+               Question 2: How frequently have you had little pleasure or interest in the activities you usually enjoy? Would you tell me more?
+               <textarea id="text2" name= "text2" type= "text" >
+               </textarea>
+					</label>
+
+					<label for="text3">
+               Question 3: "Does something scare you? Any particular thoughts?
+               <textarea id="text3" name= "text3" type= "text3"></textarea>
+               </label> 
+
+													
+					<label for="text4">
+               Question 4: How good is your attention span?
+               <textarea id="text4" name= "text4" type= "text4" >
+					</textarea>
+               </label>
+
+					<label for="text5">
+               Question 5: How often during the past 2 months have you felt as though your moods, or your life, were under your control?
+               <textarea id="text5" name= "text5" type= "text5">
+               </textarea>
+               </label>
+
+            </fieldset>
+										
+            <button id="submit" type="submit" class="btn" href="/templates/result.html">Submit the form</button>
+         </form>
+         
+            
+      </div>
+   </div>
+</main>

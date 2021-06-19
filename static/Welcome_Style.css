@@ -1,0 +1,213 @@
+body {
+    font-size: 100%;
+    font-family:'Roboto', sans-serif;
+    width: 100%;
+  }
+  
+  
+  /* Beginning of Navbar CSS */
+  body {
+    background-color: #2F3242;
+  }
+  p
+  {
+    font-family:'Roboto', sans-serif;  
+  }
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -400px;
+  }
+  .message-box {
+    height: 200px;
+    width: 380px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: 50px;
+    color: #FFF;
+    font-family: Roboto;
+    font-weight: 300;
+  }
+  .message-box h1 {
+    font-size: 60px;
+    line-height: 46px;
+    margin-bottom: 40px;
+    font-family:'Roboto', sans-serif;
+  }
+  .buttons-con .action-link-wrap {
+    margin-top: 40px;
+  }
+  .buttons-con .action-link-wrap a {
+    background: #85ffc7;
+    padding: 8px 25px;
+    border-radius: 4px;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family:'Roboto', sans-serif
+  }
+  .buttons-con .action-link-wrap a:hover {
+    background: #5A5C6C;
+    color: #fff;
+  }
+  
+  #Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5 {
+    animation: float 1s infinite ease-in-out alternate;
+  }
+  #Polygon-2 {
+    animation-delay: .2s; 
+  }
+  #Polygon-3 {
+    animation-delay: .4s; 
+  }
+  #Polygon-4 {
+    animation-delay: .6s; 
+  }
+  #Polygon-5 {
+    animation-delay: .8s; 
+  }
+  
+  @keyframes float {
+    100% {
+      transform: translateY(20px);
+    }
+  }
+  @media (max-width: 450px) {
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -250px;
+      margin-left: -190px;
+    }
+    .message-box {
+      top: 50%;
+      left: 50%;
+      margin-top: -100px;
+      margin-left: -190px;
+      text-align: center;
+    }
+  }
+  .navbar {
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    height: 60px;
+    width: 100%;
+    background: #bbb;
+    padding: 10px 20px;
+    float: none;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    float: right;
+    margin: 0px 10px;
+  }
+  
+  
+  /* End of Navbar CSS */
+  
+  
+  /* Welcome Page */
+  
+  #welcome-page {
+    background-image: url(http://www.bartsalle.nl/wp-content/uploads/2013/12/background-css-750x450.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+  }
+  
+  #welcome-text {
+    text-align: center;
+  }
+  
+  .block {
+    background: rgba(128, 128, 128, 128);
+    border: #FFF 20px double;
+    border-radius: 10px;
+    color: #FFF;
+    display: inline-block;
+    font-size: 60px;
+    font-weight: 800;
+    padding: 0 10px 7px;
+    margin: 250px;
+    text-align: center;
+  }
+  
+  
+  /* End of Welcome Page */
+  
+  #aboutme {
+    background-size: cover;
+    background: #d3d9d9;
+    background-image: url(https://i.stack.imgur.com/jGlzr.png);
+    background-attachment: fixed;
+    background-position: center;
+    height: 700px;
+  }
+  
+  #portfolio {
+    background-size: cover;
+    background-image: url(https://images6.alphacoders.com/389/389875.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    height: 700px;
+  }
+  
+  #footer {
+    text-align: center;
+    background-size: cover;
+    background-image: url(http://carmel.coop/wp-content/uploads/2014/04/Blurred-Background_4.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    height: 250px;
+    padding: 20px;
+  }
+  
+  .fs {
+    font-size: 3em;
+  }
+  
+  .img {
+    margin: 60px 20px;
+    border-radius: 50%;
+    height: 550px;
+    display: inline-block;
+    transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+  }
+  
+  .title {
+    display: inline-block;
+    background-color: grey;
+    border: #AAA 5px double;
+    border-radius: 10px;
+    color: blue;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 30px;
+  }
+  
+  .icon-btn {
+    margin: 0 20px;
+  }

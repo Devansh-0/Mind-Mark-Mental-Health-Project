@@ -1,6 +1,5 @@
 
-from mlModel import modelFile
-import json
+from mlModel import modelFile, impTopics
 from flask import Flask, request, url_for, redirect, render_template
 # import os
 # os.environ["EAI_USERNAME"] = "devansh.sharma110@gmail.com"
@@ -42,8 +41,9 @@ def result():
     myList.append(text5)
     
     LIST= myList 
-    A= modelFile(LIST)  
-    return render_template("result.html",result = A)
+    A= modelFile(LIST)
+    B= impTopics(LIST)  
+    return render_template("result.html",result = A, resultB= B)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)

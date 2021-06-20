@@ -4,27 +4,40 @@
 from requests.models import to_native_string
 
 
-def ABC(text1):
+# def ABC(text1):
+#     import os
+#     os.environ["EAI_USERNAME"] = "devansh.sharma110@gmail.com"
+#     os.environ["EAI_PASSWORD"] = 'Devansh170501!'
+
+
+#     from expertai.nlapi.cloud.client import ExpertAiClient
+#     client = ExpertAiClient()
+
+#     list= [] #Declaring crucial variables
+#     sum= 0
+
+#     text=(text1)
+#     print(type(text1))
+    
+#     output = client.specific_resource_analysis(
+#             body={"document": {"text": text}}, 
+#             params={'language': 'en', 'resource': 'sentiment'})
+#     m= output.sentiment.overall
+#     return m
+ 
+def impTopics():
     import os
     os.environ["EAI_USERNAME"] = "devansh.sharma110@gmail.com"
     os.environ["EAI_PASSWORD"] = 'Devansh170501!'
-
-
+    text= "I feel sad because my dog died. It was rough on me. I feel sometimes my emotions are being undermined. I dont do well in school as well."
     from expertai.nlapi.cloud.client import ExpertAiClient
     client = ExpertAiClient()
+    language= 'en'
+    output = client.specific_resource_analysis(body={"document": {"text": text}}, params={'language': language, 'resource': 'relevants'})
 
-    list= [] #Declaring crucial variables
-    sum= 0
+    for lemma in output.main_lemmas:
+        return(lemma.value)
 
-    text=(text1)
-    print(type(text1))
-    
-    output = client.specific_resource_analysis(
-            body={"document": {"text": text}}, 
-            params={'language': 'en', 'resource': 'sentiment'})
-    m= output.sentiment.overall
-    return m
- 
 
 
 # #Input Section

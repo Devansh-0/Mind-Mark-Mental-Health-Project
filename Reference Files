@@ -1,0 +1,13 @@
+<head><link rel= "stylesheet" type= "text/css" href= "../static/Form_Style.css"></head> (for the form css files access. include in the beginning)
+
+<link rel= "stylesheet" type= "text/css" href= "../static/Welcome_Style.css"> (For welcome css file access . include in beginning.)
+
+
+<a href="Form_HTML.html"class="link-button">Get Started</a> (BUTTON OF WELCOME PAGE GET STARTED)
+
+
+<a href="../templates/Form_HTML.html" class="link-button">  
+        Get Started
+      </a>
+      (ADD THIS TO SUBMIT BUTTON TO DISPLAY THE INFO ON NEXT PAGE)
+

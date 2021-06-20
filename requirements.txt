@@ -26,7 +26,6 @@ pickleshare==0.7.5
 prompt-toolkit==3.0.18
 Pygments==2.9.0
 pytz==2021.1
-pywin32==301
 pyzmq==22.1.0
 requests==2.25.1
 six==1.16.0

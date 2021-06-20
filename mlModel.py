@@ -1,3 +1,4 @@
+mean_score=1
 def modelFile(LIST):
 
     import os
@@ -10,6 +11,7 @@ def modelFile(LIST):
 
     processData= LIST #Declaring crucial variables
     sum= 0
+    
     for i in processData:
         
         output = client.specific_resource_analysis(
@@ -18,5 +20,6 @@ def modelFile(LIST):
         print("sentiment:", output.sentiment.overall)
         sum= sum+ output.sentiment.overall
     mean_score= sum/len(LIST)
+    mean_score= round(mean_score,2)
     return mean_score
 

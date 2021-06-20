@@ -1,0 +1,271 @@
+.m-b-xs {
+    margin-bottom: 2%;
+    
+}
+.m-b-md {
+    margin-bottom: 10%;
+    
+}
+.m-t-xs {
+    margin-top: 2%;
+    }
+.m-t-sm {
+    margin-top: 5%;
+    
+}
+* {
+    outline: 0 !important;
+}
+body {
+    padding: 2% 0;
+    background-color:#2F3242;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5.2em;
+    font-weight: 700;
+    color: #85ffc7;
+    text-transform: uppercase;
+    text-align: left;
+}
+h2
+{
+   font-family: 'Roboto', sans-serif;
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #85ffc7;
+    text-transform: uppercase;
+    text-align: left;
+}
+span
+{
+   font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #85ffc7; 
+    position: inline;
+    
+    
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    color: #fff !important;
+    text-align: left;
+}
+
+li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    color: #fff !important;
+    text-align: left;
+}
+
+
+a {
+    color: #fff !important;
+}
+a:hover {
+    text-decoration: none;
+    color: #fff !important;
+}
+#survey-form label, #survey-form .labels {
+
+    display: block !important;
+    margin-bottom: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    color: ghostwhite;
+    letter-spacing: 0.5px;
+}
+#survey-form input::-webkit-input-placeholder {
+    color: transparent !important;
+}
+#survey-form input::-moz-placeholder {
+    color: transparent !important;
+}
+#survey-form input:-ms-input-placeholder {
+    color: transparent !important;
+}
+#survey-form input:-moz-placeholder {
+    color: transparent !important;
+}
+#survey-form input, #survey-form select {
+    display: block;
+    width: 20%;
+    overflow: hidden;
+    outline: none;
+    border: 2px solid #fff !important;
+}
+#survey-form input {
+    margin-top: 1.5%;
+    padding: 0 0 5px 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff !important;
+    font-size: 1.1em;
+    font-weight: 300;
+    color: #85ffc7;
+}
+#survey-form input:focus {
+    border-color: #85ffc7;
+}
+#survey-form [type="checkbox"], #survey-form [type="radio"] {
+    display: inline-block;
+    width: auto;
+    margin: 0px 10px 0 0;
+}
+#survey-form [type="checkbox"], #survey-form [type="radio"] {
+    display: inline-block;
+    margin: 0 10px 0 0 !important;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    height: 23px;
+    width: 23px;
+    transition: all 0.15s ease-out 0s;
+    background: #37404a;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    z-index: 1000;
+    border: 2px solid #fff;
+}
+#survey-form [type="checkbox"]:hover, #survey-form [type="radio"]:hover {
+    border-color: #85ffc7;
+
+}
+#survey-form [type="checkbox"]:checked:before, #survey-form [type="radio"]:checked:before {
+    display: inline-block;
+    height: 21px;
+    width: 21px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    content: "\e014";
+    text-align: center;
+    font-family: 'Glyphicons Halflings';
+    line-height: 20px;
+    font-size: 15px;
+    color: #85ffc7;
+}
+#survey-form [type="checkbox"]:focus, #survey-form [type="radio"]:focus {
+    outline: none;
+    border-color: #fff;
+    background-color: #85ffc7;
+    border-color: #fff;
+}
+#survey-form [type="radio"] {
+    border-radius: 50%;
+
+
+}
+#survey-form [type="radio"]:after {
+    border-radius: 50%;
+   
+
+}
+#survey-form [type=number] {
+    width: 45px;
+}
+#survey-form [type=number]::-webkit-inner-spin-button, #survey-form [type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+#survey-form select {
+    height: 40px;
+    padding-left: 5px;
+    background-color: #37404a;
+    border: 2px solid #fff;
+    color: #85ffc7;
+}
+#survey-form select option {
+    padding: 5px 10px;
+    font-weight: 300;
+    cursor: pointer;
+}
+#survey-form select option:hover {
+    background-color: #85ffc7;
+}
+#survey-form textarea {
+    resize: none;
+    margin-top: 2%;
+    padding: 10px 10px 0px 20px;
+    width: 100%;
+    height: 90px;
+    color: #85ffc7;
+    background-color: #37404a;
+    border: 2px solid #fff;
+}
+#survey-form .btn {
+    display: inline-block !important;
+    position: relative;
+    width: 50%;
+    margin-top: 5% ;
+    margin-bottom:0% ;
+    margin-right: 10%;
+    margin-left: 25%;
+    height: 45px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    border: 3px solid #85ffc7;
+    border-radius: 0;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #85ffc7;
+    text-align: center;
+    background: none;
+    transition: color 0.25s ease;
+}
+#survey-form .btn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #85ffc7;
+    transform-origin: left;
+    transition: width 0.5s ease;
+    z-index: -1;
+}
+#survey-form .btn:hover {
+    color: #37404a;
+}
+#survey-form .btn:hover:after {
+    width: 100%;
+}
+#survey-form fieldset {
+    margin-top: 5% ;
+    margin-bottom:0% ;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.copyright {
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+}
+.copyright i {
+    color: #ef5350;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 8% 0;
+   }
+}

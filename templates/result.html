@@ -1,9 +1,19 @@
 <!doctype html>
 <html>
+   <head><link rel= "stylesheet" type= "text/css" href= "../static/result_style.css"></head>
     
    <body>
-    <h1>This is a test</h1>
-    <p>Here is your diagnostics: {{ result }}</p>
-      </table>
+    <h1>Sentiment Score: {{ result }} </h1>
+    <h2>An insight:</h2>
+    <p>Your Sentiment Score is based on the extensive analysis conducted on the basis of the over all tone of your replies and the content of your responses. Don't worry, your data is safe. </p>
+    <p> This questions are based on the <span> Beck Depression Inventory </span>, so as to assess the mental health of the users. Note, this application only recommends whether a person need therapy or pyschiatric help or not. </p>
+    <h2>Your Detailed analysis:</h2>
+    <p>The Score ranges from <span>-100 to +100.</span></p>
+    <ul>
+       <li> If score lies between <span>0 to 30</span>, you are emotionally sound. anything above <span> 30 </span>is considered very healthy.</li>
+       <li>If the score lies between<span> 0 to -30 </span>, you do require some assistance. Anything below <span> -30 </span> demands serious attenton. </li>
+    </ul>  
+    <h2>What to do if score is low?</h2>
+    <p>First of all, know that it is okay to feel the way you do. It is recommended that you talk to someone you trust. Never hesitate to seek out professional help, since it will help you grow and leash your wandering thoughts.</p>
    </body>
 </html>

@@ -8,8 +8,8 @@
 
          <div class="m-b-md text-center">
 
-            <h1 id="title">Mental Health Analyser</h1>
-            <p id="description" class="description" class="text-center">Based on UTC 8 Recommendations</p>
+            <h1 id="title">Mind Mark</h1>
+            <p id="description" class="description" class="text-center">Employee Mental Health Analyser</p>
          </div>
 
          <form method="POST" action="/templates/result.html" id="survey-form" name="survey-form">
@@ -28,7 +28,8 @@
                <input class="" type="number" id="number" name="number" min="8" max="112" placeholder="Enter you age (required)" required />
                </label>
             </fieldset>
-										
+
+
             <fieldset>
                <label for="dropdown">
                   You are:
@@ -44,48 +45,54 @@
                </label>
             </fieldset>
 
-
             <fieldset>
-               <div class="labels">
-                  Are you on some sort of medication?*
-               </div>
-               <label class="m-b-xs">
-               <input type="radio" name="survey-form-gender" value="yes" checked /> yes
+               <label for="dropdown">
+                  Please select your department:
+																
+                  <select id="dropdown" name="dropdown" class="m-t-xs">
+
+                     <option value="Accounts and Finance" selected>Accounts and Finance</option>
+                     <option value="HR">HR</option>
+                     <option value="Sales and marketing">Sales and marketing</option>
+                     <option value="Infrastructures">Infrastructures</option>
+                     <option value="Research and development">Research and development</option>
+                     <option value="Learning and development">Learning and development</option>
+                     <option value="IT services">IT services</option>
+                     <option value="Product development">Product development</option>
+                     
+                     
+                  </select>
                </label>
-               <label class="m-b-xs">
-               <input type="radio" name="survey-form-gender" value="No" /> No
-               </label>
-              
             </fieldset>
            
             <fieldset>
 
                <label for="text1">
-               Question 1: How is your general mood throughout the day? Can you tell the most frequent thoughts you have in a day?
+               Question 1: Which moods do you feel mostly at work?
                <textarea id="text1" name= "text1" type= "text">
                </textarea>
                </label>
 
 					<label for="text2">
-               Question 2: How frequently have you had little pleasure or interest in the activities you usually enjoy? Would you tell me more?
+               Question 2:  Do you ever worry about finances? 
                <textarea id="text2" name= "text2" type= "text" >
                </textarea>
 					</label>
 
 					<label for="text3">
-               Question 3: "Does something scare you? Any particular thoughts?
+               Question 3: Compared to when you started your role how would you say your mental health is? 
                <textarea id="text3" name= "text3" type= "text3"></textarea>
                </label> 
 
 													
 					<label for="text4">
-               Question 4: How good is your attention span?
+               Question 4: How much enjoyment do you get from your job?
                <textarea id="text4" name= "text4" type= "text4" >
 					</textarea>
                </label>
 
 					<label for="text5">
-               Question 5: How often during the past 2 months have you felt as though your moods, or your life, were under your control?
+               Question 5: How do you work when you are under pressure?
                <textarea id="text5" name= "text5" type= "text5">
                </textarea>
                </label>

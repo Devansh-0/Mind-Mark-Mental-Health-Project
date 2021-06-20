@@ -29,20 +29,29 @@ def impTopics(LIST):
     os.environ["EAI_PASSWORD"] = 'Devansh170501!'
 
     processData= LIST 
-    elements = ''
-    for element in LIST:
-        elements += str(element)
-    print(elements)
+    print("Process data: ", *processData)
+
+    
+    text = ''.join(processData)
+    print("Final Text: ", text)
 
     from expertai.nlapi.cloud.client import ExpertAiClient
     client = ExpertAiClient()
 
     language= 'en'
-    for i in processData:
-        output = client.specific_resource_analysis(body={"document": {"text":elements}}, params={'language': language, 'resource': 'relevants'})
-        for lemma in output.main_lemmas:
-            print(lemma.value)
-            return(lemma.value)
     
+    output = client.specific_resource_analysis(body={"document": {"text": text}}, params={'language': language, 'resource': 'relevants'})
+
+
+# Main lemmas
+    x=[]
+    print("Main lemmas:")
+
+    for lemma in output.main_lemmas:
+        print(lemma.value)
+        
+        x.append(lemma.value)
+    print(*x)
+    return x
 
   

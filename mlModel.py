@@ -2,8 +2,8 @@ mean_score=1
 def modelFile(LIST):
 
     import os
-    os.environ["EAI_USERNAME"] = "dummysample.110@gmail.com"
-    os.environ["EAI_PASSWORD"] = '1234509876qwertpoiuyAA!'
+    os.environ["EAI_USERNAME"] = "devansh.sharma110@gmail.com"
+    os.environ["EAI_PASSWORD"] = 'Devansh170501!'
 
 
     from expertai.nlapi.cloud.client import ExpertAiClient

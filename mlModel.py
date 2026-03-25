@@ -2,8 +2,6 @@ mean_score=1
 def modelFile(LIST):
 
     import os
-    os.environ["EAI_USERNAME"] = "!!!!!!!!!
-    os.environ["EAI_PASSWORD"] = '!!!!!!!'
 
 
     from expertai.nlapi.cloud.client import ExpertAiClient
@@ -25,8 +23,8 @@ def modelFile(LIST):
 
 def impTopics(LIST):
     import os
-    os.environ["EAI_USERNAME"] = "dummysample.110@gmail.com"
-    os.environ["EAI_PASSWORD"] = '1234509876qwertpoiuyAA!'
+    # os.environ["EAI_USERNAME"] = "dummysample.110@gmail.com"
+    # os.environ["EAI_PASSWORD"] = '1234509876qwertpoiuyAA!'
 
     processData= LIST 
     print("Process data: ", *processData)
